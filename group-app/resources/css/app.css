@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.expand-on-hover{
+    transition: 0.3s ease-in-out;
+}
+.expand-on-hover:hover{
+    transform: scale(1.2);
+}
+
+.card{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+}
+#search_input {
+    border: none;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+           -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+   
+   #search_input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+   .img {
+    position: relative;
+    max-width: 100%;
+    height: 250px;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To maintain aspect ratio and cover the div */
+  }
+  
+  .image-text-right {
+    position: absolute;
+    top: 10px; /* Position at the top */
+    right: 10px; /* Position at the right */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with some transparency */
+    border-radius: 10px;
+    padding: 5px 15px; /* Add padding to the text */
+  }
+  .image-text-left {
+    position: absolute;
+    top: 10px; /* Position at the top */
+    left: 10px; /* Position at the right */
+    color: black; /* Text color */
+    background-color: #ffc107; /* Background color with some transparency */
+    border-radius: 10px;
+    padding: 5px ; /* Add padding to the text */
+    text-decoration: none;
+  }
+  .image-text-bottom-left{
+    position: absolute;
+    bottom: 10px; /* Position at the top */
+    left: 10px; /* Position at the right */
+    color: white; 
+    border-radius: 10px;
+    padding: 5px ;
+  }
